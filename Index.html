@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOPWATCH & TIMER</title>
+    <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">STOPWATCH</h1>
+    <div class="watch-face">
+        <div class="outer-square">
+            <div class="inner-square">
+             <span class="text min">0 :</span>
+             <span class="text sec">0 :</span>
+             <span class="text msec">&nbsp;0</span>
+            </div>
+        </div>
+        <div class="button-wrap">
+            <button class="button reset hidden">Reset</button>
+            <button class="button play">PLAY</button>
+        <button class="button lap hidden">LAP</button></div>
+    </div>
+   <ul class="laps">
+    
+    <button class="lap-clear-all">Clear All</button>
+   </ul>
+</div>
+<div>
+    <img src="clock.jpg" alt="" srcset="" width="300" height="400">
+</div>
+<div class="timer">
+       <h1 class="heading">TIMER</h1>
+    <div class="input">
+      <input type="text" id="time-input" placeholder="Enter Time (in seconds)">
+      <button onclick="startTimer()">Start</button>
+    </div>
+ 
+    <div class="outer">
+        <div class="inner">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+    </div>
+  </div>
+
+ <script src="timer.js"></script>
+</body>
+</html>
